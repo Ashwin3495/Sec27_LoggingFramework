@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+import org.testng.annotations.Test;
+
+public class Lec112_Streams1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//@Test
+		ArrayList<String> names=new ArrayList<String>();
+		names.add("Ashwin");
+		names.add("Abhilash");
+		names.add("Bitu");
+		names.add("Chetan");
+		names.add("Abhishek");
+		
+		long d=names.stream().filter(s->s.startsWith("A")).count();
+		System.out.println(d);
+		
+		long c= Stream.of("Ashwin","Bitu","Chetan","Abhilash","Abhishek").filter(a->
+		{
+		a.startsWith(" ");
+		return true;
+		}).count();
+		System.out.println(c);
+		
+		
+	}
+
+}

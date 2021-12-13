@@ -1,0 +1,30 @@
+io.cucumber.junit.UndefinedStepException: The step 'Initialize the browser' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Initialize the browser")
+public void initialize_the_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("Navigate to {string} site")
+public void navigate_to_site(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("Click on Login link in home page to land on Secure sign in Page")
+public void click_on_login_link_in_home_page_to_land_on_secure_sign_in_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User login with {string} and {string}")
+public void user_login_with_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Verify the HomePage")
+public void verify_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR">
+<Properties>
+	<Property name="basePath">Sec29_E2E/logs</Property>
+</Properties>
+
+  <Appenders>
+     
+  	<RollingFile name="File" filename="${basePath}/prints.log" filePattern="Sec29_E2E/logs/prints-%d{yyyy-MM-dd}.log">
+  	<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+  	<SizeBasedTriggerPolicy size="500"/>
+  	</RollingFile>
+  	
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+  </Appenders>
+  
+  <Loggers>
+  <!-- Applicable only to a class  'additivity' is false so the error message should not be displayed twice -->
+    <Logger name="Academy.Sec29_E2E" level="trace" additivity="true">
+      <AppenderRef ref="File"/>
+    </Logger>
+   
+    <!-- Root is applicable to all the test in the project -->
+    <Root level="trace">  
+      <AppenderRef ref="File"/>
+    </Root>
+  </Loggers>
+</Configuration>

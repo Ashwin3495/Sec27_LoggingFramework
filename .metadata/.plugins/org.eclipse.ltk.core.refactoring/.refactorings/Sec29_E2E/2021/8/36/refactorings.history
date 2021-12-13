@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Sec29_E2E&apos;&#x0D;&#x0A;- Original project: &apos;Sec29_E2E&apos;&#x0D;&#x0A;- Original element: &apos;Academy.Sec29_E2E.ExtendReports.java&apos;" description="Delete element" element1="/src\/main\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;Academy.Sec29_E2E{ExtendReports.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1630409552457" subPackages="false" version="1.0"/>
+</session>

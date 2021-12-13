@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Logging.xml&apos; to &apos;Sec29_E2E/src/test/java/Resources&apos;&#x0D;&#x0A;- Original project: &apos;Sec27_LoggingFramework&apos;&#x0D;&#x0A;- Destination element: &apos;Sec29_E2E/src/test/java/Resources&apos;&#x0D;&#x0A;- Original element: &apos;Logging.xml&apos;" description="Copy file" destination="=Sec29_E2E/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;Resources" element1="resources/Logging.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1630133339369" units="0" version="1.0"/>
+</session>

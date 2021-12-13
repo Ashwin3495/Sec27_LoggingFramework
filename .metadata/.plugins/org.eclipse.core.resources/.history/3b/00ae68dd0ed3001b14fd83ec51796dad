@@ -1,0 +1,45 @@
+import java.util.Arrays;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ArrayList2_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\Tools\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+		int j=0;
+		
+		String[] name={"Cucumber","Brocolli","Beetroot","Carrot","Carrot"};
+		List<WebElement> item= driver.findElements(By.cssSelector("h4.product-name"));
+
+		for(int i=0;i<item.size();i++)
+		{
+			//Entire steps needs to be practiced
+			String[] name1=item.get(i).getText().split("-");
+			String formattedname=name1[0].trim();
+			
+			List a=Arrays.asList(name);
+			
+			if(a.contains(formattedname))
+			{
+				j++;
+				driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
+				System.out.println(formattedname);
+				if(j==formattedname.length()) 
+				{
+					System.out.print(formattedname.length());
+					break;
+				}
+			}
+			
+		}
+	}
+
+}

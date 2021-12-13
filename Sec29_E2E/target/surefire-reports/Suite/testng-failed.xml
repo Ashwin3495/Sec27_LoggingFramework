@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Academy.Sec29_E2E.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="ValidateTitle(failed)" verbose="0">
+    <classes>
+      <class name="Academy.Sec29_E2E.Validatetitle">
+        <methods>
+          <include name="ValidateTitle"/>
+          <include name="ValidateHeader"/>
+          <include name="teardown"/>
+          <include name="initalize"/>
+        </methods>
+      </class> <!-- Academy.Sec29_E2E.Validatetitle -->
+    </classes>
+  </test> <!-- ValidateTitle(failed) -->
+</suite> <!-- Failed suite [Suite] -->
